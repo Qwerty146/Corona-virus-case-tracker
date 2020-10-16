@@ -1,6 +1,6 @@
 body::before {
     content: '';
-    background-image: url(./images/earth.jpg);
+    background-image: url(../images/mountain.jpg);
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -10,10 +10,6 @@ body::before {
     height: 100%;
     filter: blur(4px);
     z-index: -19999;
-}
-
-.display-3 {
-  color: white;
 }
 
 .navigation-bar-logo {
@@ -29,26 +25,11 @@ li {
     font-size: 15px;
 }
 
-.fade-anim {
-  margin: 20px;
-  animation: case-results-animation 1s linear;
-}
-
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 24px;
-}
-
 .case-results {
-  color: white;
-  font-size: 20px;
-}
-
-.status {
-  color: green;
+  margin-top: 20px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 a {
@@ -71,29 +52,62 @@ p.display-none {
   padding: 0;
 }
 
+h3.text-center {
+    margin-bottom: 10%;
+}
+
 li:hover a {
   background-position: 100%;
   color: #313131 !important;
   transform: translateX(16px);
 }
 
-@keyframes case-results-animation {
-  from {
-    opacity: 0;
-    margin: 0;
-  }
+.contact-form {
+    background: #fff;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.contact-form .form-control {
+    border-radius:1rem;
+}
+.contact-image {
+    text-align: center;
+}
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form {
+    padding: 14%;
+}
+.contact-form form .row {
+    margin-bottom: -7%;
+}
 
-  to {
-    opacity: 1;
-    margin: 20px;
-  }
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
     p.display-none {
       display: none;
     }
+
     li[class="nav-item"] {
       text-align: center;
+    }
+
+    .btnContact {
+        position: absolute;
+        bottom: -120%;
     }
   }

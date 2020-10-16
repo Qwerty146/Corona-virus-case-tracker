@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Corona Virus Case Tracker</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#">
             <img src="./images/logo.png" class="img-fluid" alt="logo">
@@ -34,7 +34,7 @@
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact/contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -46,17 +46,19 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1 class="display-3">Enter a country</h1>
-              <input type="text"
-                class="form-control" name="" id="submit-country" aria-describedby="helpId" placeholder="">
-            <input type="submit" class="btn btn-primary mt-4" id="submit-button" value="Submit">
+        <div class="container text-center mt-5">
+            <h1 class="display-3 ">Enter a country</h1>
+            <input type="text" class="form-control mt-5 text-center" name="" id="submit-country" aria-describedby="helpId">
+            <input type="submit" class="btn btn-primary mt-5" id="submit-button" value="Submit">
+            <br>
+            <br>
+            <span class="spinner"></span>
+            <br>
+            <span class="status"></span>
             <div class="case-results">
-                Results will be displayed here
+
             </div>
         </div>
-    </div>
 
 
     <!-- Optional JavaScript -->
